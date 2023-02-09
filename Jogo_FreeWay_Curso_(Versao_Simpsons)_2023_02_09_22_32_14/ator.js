@@ -6,7 +6,7 @@ let meusPontos = 0;
 
 
 function mostraAtor(){
-  image (imagemDoAtor, xAtor, yAtor, 26, 27);
+  image (imagemDoAtor, xAtor, yAtor, 26, 26);
   
 }
 
@@ -24,7 +24,7 @@ function movimentaAtor(){
 function verificaColisao(){
   //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
   for (let i = 0; i < imagemObstaculos.length; i = i + 1){
-    colisao = collideRectCircle(xObstaculos[i], yObstaculos[i], comprimentoObstaculos, alturaObstaculos, xAtor, yAtor, 16)
+    colisao = collideRectCircle(xObstaculos[i], yObstaculos[i], comprimentoObstaculos, alturaObstaculos, xAtor, yAtor, 15)
     if (colisao){
       voltaParaPosicaoInicial()
       somDaColisao.play();
