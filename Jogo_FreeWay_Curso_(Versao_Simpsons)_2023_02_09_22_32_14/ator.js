@@ -3,7 +3,7 @@ yAtor = 368;
 xAtor = 85;
 let colisao = false;
 let meusPontos = 0;
-let vidas = 4;
+
 
 function mostraAtor(){
   image (imagemDoAtor, xAtor, yAtor, 26, 27);
