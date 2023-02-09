@@ -24,11 +24,10 @@ function movimentaAtor(){
 function verificaColisao(){
   //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
   for (let i = 0; i < imagemObstaculos.length; i = i + 1){
-    colisao = collideRectCircle(xObstaculos[i], yObstaculos[i], comprimentoObstaculos, alturaObstaculos, xAtor, yAtor, 14)
+    colisao = collideRectCircle(xObstaculos[i], yObstaculos[i], comprimentoObstaculos, alturaObstaculos, xAtor, yAtor, 16)
     if (colisao){
       voltaParaPosicaoInicial()
       somDaColisao.play();
-      vidas -=1;
       if (pontosMaiorQueZero()){
        meusPontos -= 1; 
       }
